@@ -3,6 +3,7 @@
 @font-face {
     font-family: RedHat;
     src: url(../../assets/fonts/RedHatDisplay-VariableFont_wght.ttf);
+    
 }
 
 /* MAIN STYLE */
@@ -11,6 +12,11 @@ body {
     color: black;
     margin: 0;
     font-family: RedHat;
+}
+
+.error {
+    text-align: center;
+    color: red;
 }
 
 
@@ -91,3 +97,5 @@ input[type="submit"] {
     height: 2rem;
     border-radius: 2px;
 }
+
+/* LOGIN */
