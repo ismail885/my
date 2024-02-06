@@ -2,7 +2,7 @@
 
 <div class="wrapper">
     <h1>Bienvenue!</h1>
-    <img src="../assets/images/logo.jpg" alt="web">
+    <img src="../assets/images/dragons.png" alt="dragon">
 </div>
 
 <?php include '../partials/footer.php' ?>

@@ -3,7 +3,6 @@
 @font-face {
     font-family: RedHat;
     src: url(../../assets/fonts/RedHatDisplay-VariableFont_wght.ttf);
-    
 }
 
 /* MAIN STYLE */
@@ -19,6 +18,10 @@ body {
     color: red;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
 /* NAVBAR */
 
@@ -52,7 +55,16 @@ nav a {
 /* HOMEPAGE  */
 
 .wrapper {
-    padding-top: 5rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* .wrapper {
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,13 +73,13 @@ nav a {
 .wrapper h1 {
     margin: 0;
     text-align: center;
-}
+} */
 
 .wrapper img {
     margin-top: 2rem;
     width: 15rem;
     height: 15rem;
-}
+} 
 
 /* PRODUCTS LIST */
 
@@ -79,23 +91,57 @@ nav a {
     row-gap: 2rem;
 }
 
-/*SINGUP*/
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SIGNUP FORM  */
 
 form {
     display: flex;
     flex-direction: column;
 }
-form input {
+
+form input, textarea {
     width: 15rem;
-    height: 1.5rem;
+    height: 2rem;
     margin-top: 0.5rem;
-    border-radius: 2px;
+    padding-left: 0.5rem;
+    border-radius: 6px;
+    border: solid 1px gray;
+}
+
+textarea {
+    height: 8rem;
 }
 
 input[type="submit"] {
-    width: 15.3rem;
+    width: 15rem;
     height: 2rem;
-    border-radius: 2px;
+    background-color: darkslategrey;
+    color: white;
+    border: solid 1px darkslategrey;
+    width: 16rem;
 }
 
-/* LOGIN */
+button {
+    background-color: darkslategrey;
+    color: white;
+    height: 2rem;
+    border-radius: 6px;
+    border: solid 1px darkslategrey;
+}
+
+.signup-form, .login-form, .contact-form {
+    margin-top: 2rem;
+}
+
+/* PROFILE PAGE */
+
+.profile-avatar {
+    width: 7rem !important;
+    height: 8rem !important;
+    border-radius: 100%;
+}
+
